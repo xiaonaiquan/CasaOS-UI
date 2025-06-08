@@ -444,6 +444,8 @@ export default {
 						this.$messageBus("files_addlocation_googledrive");
 					} else if (driver === "OneDrive") {
 						this.$messageBus("files_addlocation_onedrive");
+					} else if(driver === "BaiduNetdisk") {
+						this.$messageBus("files_addlocation_baidu");
 					}
 					this.getCloudStorage();
 					break;

@@ -75,7 +75,7 @@ export default {
 
 		// goto auth procress
 		auth(driver) {
-			const newWindowDrivers = ['Dropbox', 'Google Drive', 'OneDrive']
+			const newWindowDrivers = ['Dropbox', 'Google Drive', 'OneDrive', 'BaiduNetdisk']
 			if (newWindowDrivers.includes(driver.name)) {
 				this.openAuthWindow(driver)
 				if (driver.name === 'Dropbox') {
@@ -84,6 +84,8 @@ export default {
 					this.$messageBus('files_addlocation_googledrive')
 				} else if (driver.name === 'OneDrive') {
 					this.$messageBus('files_addlocation_onedrive')
+				} else if (driver.name === 'BaiduNetdisk'){
+					this.$messageBus('files_addlocation_baidu')
 				}
 			} else {
 				console.log("open config modal");
