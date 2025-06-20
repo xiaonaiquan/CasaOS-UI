@@ -359,6 +359,8 @@
   "Connect Dropbox": "绑定 Dropbox",
   "Connect Google Drive": "绑定 Google 云端硬盘",
   "Connect OneDrive": "绑定 OneDrive",
+  "Connect BaiduNetdisk": "绑定 百度网盘",
+  "BaiduNetdisk": "百度网盘",
   "FilesDrop": "文件丢送",
   "You are using the device": "您正在使用该设备",
   "Click to send the file to the device.": "点击向设备发送文件",
